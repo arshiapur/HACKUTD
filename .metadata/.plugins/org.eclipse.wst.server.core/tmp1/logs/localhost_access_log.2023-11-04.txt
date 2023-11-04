@@ -1,0 +1,6 @@
+127.0.0.1 - - [04/Nov/2023:14:40:39 -0500] "GET / HTTP/1.1" 200 784
+0:0:0:0:0:0:0:1 - - [04/Nov/2023:14:40:52 -0500] "GET /Employee/ HTTP/1.1" 200 57
+0:0:0:0:0:0:0:1 - - [04/Nov/2023:14:40:53 -0500] "GET /favicon.ico HTTP/1.1" 404 763
+127.0.0.1 - - [04/Nov/2023:16:45:34 -0500] "GET / HTTP/1.1" 200 784
+0:0:0:0:0:0:0:1 - - [04/Nov/2023:16:45:35 -0500] "GET /CalculatorApp/CalcApp.jsp HTTP/1.1" 200 777
+0:0:0:0:0:0:0:1 - - [04/Nov/2023:16:46:17 -0500] "GET /CalculatorApp/CalculatorServlet?first=1&second=2&symbol=%2B HTTP/1.1" 404 787

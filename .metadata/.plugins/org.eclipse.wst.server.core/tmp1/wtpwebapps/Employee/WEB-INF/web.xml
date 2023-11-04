@@ -1,0 +1,37 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>reserveServlet</servlet-name>
+  	<display-name>reserveServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.kom.reserveServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ReserveServlet</servlet-name>
+  	<display-name>ReserveServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.kom.ReserveServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>EmployeeServlet</servlet-name>
+  	<display-name>EmployeeServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.kom.EmployeeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>reserveServlet</servlet-name>
+  	<url-pattern>/reserveServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ReserveServlet</servlet-name>
+  	<url-pattern>/ReserveServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EmployeeServlet</servlet-name>
+  	<url-pattern>/EmployeeServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

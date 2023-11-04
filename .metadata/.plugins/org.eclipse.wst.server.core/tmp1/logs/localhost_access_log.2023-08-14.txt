@@ -1,0 +1,13 @@
+127.0.0.1 - - [14/Aug/2023:17:00:06 -0500] "GET / HTTP/1.1" 200 784
+0:0:0:0:0:0:0:1 - - [14/Aug/2023:17:00:06 -0500] "GET /CalculatorApp/CalcApp.jsp HTTP/1.1" 200 777
+0:0:0:0:0:0:0:1 - - [14/Aug/2023:17:00:08 -0500] "GET /CalculatorApp/css/blockedPage.css HTTP/1.1" 404 793
+0:0:0:0:0:0:0:1 - - [14/Aug/2023:17:00:08 -0500] "GET /favicon.ico HTTP/1.1" 404 763
+127.0.0.1 - - [14/Aug/2023:17:03:19 -0500] "GET / HTTP/1.1" 200 784
+0:0:0:0:0:0:0:1 - - [14/Aug/2023:17:03:19 -0500] "GET /CalculatorApp/CalcApp.jsp HTTP/1.1" 200 777
+0:0:0:0:0:0:0:1 - - [14/Aug/2023:17:03:20 -0500] "GET /CalculatorApp/css/blockedPage.css HTTP/1.1" 404 793
+0:0:0:0:0:0:0:1 - - [14/Aug/2023:17:03:33 -0500] "GET /CalculatorApp/CalculatorServlet?first=2&second=1&symbol=%2B HTTP/1.1" 404 787
+0:0:0:0:0:0:0:1 - - [14/Aug/2023:17:03:33 -0500] "GET /CalculatorApp/css/blockedPage.css HTTP/1.1" 404 793
+0:0:0:0:0:0:0:1 - - [14/Aug/2023:17:04:32 -0500] "GET /CalculatorApp/CalcApp.jsp HTTP/1.1" 200 777
+0:0:0:0:0:0:0:1 - - [14/Aug/2023:17:04:33 -0500] "GET /CalculatorApp/css/blockedPage.css HTTP/1.1" 404 793
+0:0:0:0:0:0:0:1 - - [14/Aug/2023:17:04:40 -0500] "GET /CalculatorApp/CalculatorServlet?first=6&second=3&symbol=%2B HTTP/1.1" 404 787
+0:0:0:0:0:0:0:1 - - [14/Aug/2023:17:04:41 -0500] "GET /CalculatorApp/css/blockedPage.css HTTP/1.1" 404 793
