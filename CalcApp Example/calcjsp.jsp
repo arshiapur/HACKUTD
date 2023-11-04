@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +11,7 @@
 		<h1>Calculator</h1>
 		<form method = "get" action = "CalculatorServlet">
 		<h4>
-			<table style = "with: 80%">
+			<table style="width:80%">
 				<tr>
 					<td> Enter the first number: </td>
 					<td> <input type = "text" name = "first" /> </td>
