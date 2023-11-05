@@ -1,87 +1,4 @@
-<!
-<!DOCTYPE html>
-<html>
 
-<head>
-    <title>Savings Calculator</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
-    <link href="style.css" rel="stylesheet">
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand"href="index.html">Your Wise Piggy</a> <!-- this href brings it back to mainpage if presses home-->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <!-- Link to home page -->
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <!--Link to calculator tab -->
-              <li class="nav-item">
-                <a class="nav-link" href="Calculator.html">Calculator</a>
-              </li>
-    
-            <li class="nav-item">
-                <a class="nav-link" href="quiz.html">Financial Literacy Quiz</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      
-    <h2>Savings Calculator</h2>
-    <p>Enter your annual salary:</p>
-    <input type="text" id="annualSalary" placeholder="Enter your annual salary">
-    <p>Enter the percent of your salary to save, as a decimal (e.g., enter 0.1 for 10%):</p>
-    <input type="text" id="percentToSave" placeholder="Enter the percent to save, as a decimal (e.g., enter 0.1 for 10%)">
-    <button onclick="calculateSavings()">Calculate</button>
-    <p id="savingsResult"></p>
-
-    <script>
-        function calculateSavings() {
-            let annualSalary = parseFloat($("#annualSalary").val());
-            let percentToSave = parseFloat($("#percentToSave").val());
-
-            if (isNaN(annualSalary) || isNaN(percentToSave)) {
-                $("#savingsResult").text("Invalid input. Please enter numbers only.");
-            } else {
-                $.ajax({
-                    url: 'http://127.0.0.1:5501',
-                    type: 'POST',
-                    contentType: 'application/json',
-                    data: JSON.stringify({
-                        annualSalary: annualSalary,
-                        percentToSave: percentToSave
-                    }),
-                    success: function(data) {
-                        $("#savingsResult").text("You should save $" + data.savingsAmount.toFixed(2) + " per month.");
-                    },
-                    error: function(xhr, status, error) {
-                        console.error('Error:', error);
-                    }
-                });
-            }
-        }
-    </script>
-
-    <!-- Bootstrap JavaScript-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</body>
-
-</html>>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -89,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Savings Calculator</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="Calculator.js"></script>
+    <script src="calcsrc.js"></script>
 </head>
 <body>
     <h2>Savings Calculator</h2>

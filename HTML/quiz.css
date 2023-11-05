@@ -5,21 +5,24 @@ h2{
 }
 
 button {
-    background-color: lightpink;
+    background-color: forestgreen;
+    color: white;
 }
 
 nav{
     background-color: lightpink;
 }
 
-body{
+.page{
     background-color: rgb(255, 225, 230);
+    padding: 20px;
+    
 }
 
-.pChoose{
-    padding: 20px;
-}
+
 
 h1{
     font-size: 20px;
+    font-weight: normal;
+    padding-top: 15px;
 }
