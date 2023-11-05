@@ -89,6 +89,14 @@ function updateResult() {
   if (resultW == 0){
     result.innerHTML = "Congratulations, you are a financial expert, you know your stuff! Keep continuing to learn about managing your money!"
     console.log("You know your stuff! Keep learning about managing your money and you're well on your way to being financially smart!");
+    for (var i = 0; i < maxConfettis; i++) {
+      particles.push(new confettiParticle());
+    }
+    
+    // Initialize
+    canvas.width = W;
+    canvas.height = H;
+    Draw();
   }
   else if (resultW > 0 && resultW <=3) {
     result.innerHTML = "You know your stuff! You're very financially smart but keep learning about managing your money!"
