@@ -1,0 +1,39 @@
+body{
+    font-family: tahoma;
+    background-color: rgb(255, 225, 230);
+}
+
+nav {
+    background-color: lightpink;
+    
+}
+
+.bannerRow{
+    padding: 20px;
+} 
+
+.pig{
+    text-align: center;
+    font-size: 60px;
+}
+
+.btn{
+    background-color: forestgreen;
+}
+
+.titleIn{
+    color: forestgreen;
+    
+}
+
+.desc{
+    text-align: center;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.container1{
+    padding: 40px;
+}

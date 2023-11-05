@@ -1,0 +1,16 @@
+h2{
+    padding: 10px;
+    font-size: 20px;
+}
+
+button {
+    background-color: lightpink;
+}
+
+nav{
+    color: lightpink;
+}
+
+body{
+    background-color: rgb(255, 225, 230);
+}
