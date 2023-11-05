@@ -1,6 +1,7 @@
 h2{
     padding: 10px;
     font-size: 20px;
+   
 }
 
 button {
@@ -8,9 +9,17 @@ button {
 }
 
 nav{
-    color: lightpink;
+    background-color: lightpink;
 }
 
 body{
     background-color: rgb(255, 225, 230);
+}
+
+.pChoose{
+    padding: 20px;
+}
+
+h1{
+    font-size: 20px;
 }

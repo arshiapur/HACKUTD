@@ -1,3 +1,4 @@
+<!
 <!DOCTYPE html>
 <html>
 
@@ -57,7 +58,7 @@
                 $("#savingsResult").text("Invalid input. Please enter numbers only.");
             } else {
                 $.ajax({
-                    url: 'http://127.0.0.1:5501/savings',
+                    url: 'http://127.0.0.1:5501',
                     type: 'POST',
                     contentType: 'application/json',
                     data: JSON.stringify({
@@ -80,4 +81,23 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 
+</html>>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Calculator.js"></script>
+</head>
+<body>
+    <h2>Savings Calculator</h2>
+    <p>Enter your annual salary:</p>
+    <input type="text" id="annualSalary" placeholder="Enter your annual salary">
+    <p>Enter the percent of your salary to save, as a decimal (e.g., enter 0.1 for 10%):</p>
+    <input type="text" id="percentToSave" placeholder="Enter the percent to save, as a decimal (e.g., enter 0.1 for 10%)">
+    <button id="calculateButton">Calculate</button>
+    <p id="savingsResult"></p>
+</body>
 </html>

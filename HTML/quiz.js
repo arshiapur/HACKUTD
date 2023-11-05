@@ -85,22 +85,6 @@ function right() {
 }
 
 
-// Import the confetti library (if using ES6 modules)
-import confetti from 'confetti-js';
-
-// Function to trigger confetti
-function celebrate() {
-    const confettiSettings = { target: 'confetti-container' };
-    const confettiInstance = new confetti.ConfettiGenerator(confettiSettings);
-    
-    confettiInstance.render();
-    
-    // Stop the confetti after a few seconds (e.g., 10 seconds)
-    setTimeout(() => {
-        confettiInstance.clear();
-    }, 10000);
-}
-
 function updateResult() {
   if (resultW == 0){
     result.innerHTML = "Congratulations, you are a financial expert, you know your stuff! Keep continuing to learn about managing your money!"
@@ -117,7 +101,7 @@ else if (resultW >= 4 && resultW <= 6) {
 else if (resultW >= 7 && resultW <= 9){
     result.innerHTML = "You are still on the beginning of your journey in financial literacy, continue learning to grow financially start! "
     console.log("You ");
-    celebrate();
+
 }
 }
 
